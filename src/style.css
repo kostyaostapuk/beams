@@ -1,0 +1,47 @@
+.animate-beam-spin1 {
+    animation: 1.5s linear forwards c;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.animate-beam-spin2 {
+    animation: 1.5s linear forwards c;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.animate-beam-spin3 {
+    animation: 1.5s linear forwards c;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.animate-beam-spin4 {
+    animation: 1.5s linear forwards c;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes c {
+    0% {
+        transform: translateX(-45px) translateY(-190px) translateZ(0) rotate(0);
+    }
+
+    to {
+        transform: translateX(-45px) translateY(-190px) translateZ(0) rotate(-1turn);
+    }
+}
+
+.will-change-transform {
+    will-change: transform;
+}
+
+.bg-landing-hero-beam-bg {
+    background-image: conic-gradient(from 0deg, currentColor 6%, #0000 14%, #0000 100%);
+}
+
+.mask {
+    mask-type: alpha;
+    -webkit-mask-image: url(./mask.svg);
+    mask-image: url(./mask.svg);
+}
